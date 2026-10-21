@@ -4,7 +4,7 @@
 
 **Open-source software, kernel-sandboxed agent orchestrators, and sovereign computing stacks for local hardware.**
 
-[**Website**](https://sovgrid.org) · [**Fleet Project Page**](https://sovgrid.org/fleet/) · [**Nostr**](https://njump.me/cipherfox@sovgrid.org)
+[**Website**](https://sovgrid.org) · [**Fleet Project Page**](https://sovgrid.org/fleet/) · [**Support & Value4Value**](https://sovgrid.org/support/) · [**Nostr**](https://njump.me/cipherfox@sovgrid.org)
 
 </div>
 
@@ -23,12 +23,27 @@
 
 ---
 
-### Core Architecture
+### Architecture & Principles
 
-* **Kernel Confinement:** Agents run directly on host or VM, confined at the syscall level by the Linux kernel (Landlock ABI 6+ and seccomp).
+* **Kernel Confinement:** Agents run directly on host or VM, confined at the syscall level by the Linux kernel (Landlock ABI 6+ and seccomp). No heavy container overhead.
 * **Verify Before Claim:** An agent's execution is a claim, not proof. Independent compilation and test gates must pass inside a credential-free sandbox before anything merges.
 * **Local Weights First:** Thompson sampling ranks models and harnesses on your own hardware first (vLLM, SGLang, Ollama) before falling back to external tiers.
-* **Value-for-Value:** Independent open-source development funded via Bitcoin Lightning and grants.
+* **Value-for-Value:** Independent open-source development funded directly by operators without venture capital.
+
+---
+
+### Connect on Nostr
+
+* **Operator:** [`cipherfox@sovgrid.org`](https://njump.me/cipherfox@sovgrid.org) (engineering war stories, technical observations)
+* **Grid Releases:** [`@sovgrid`](https://njump.me/blog@sovgrid.org) (official release announcements and changelog dispatches)
+
+---
+
+### Support & Sponsoring
+
+We believe in **Value-for-Value**. If you find our tools useful, consider supporting open-source development via Bitcoin Lightning, Nostr zaps, or grants:
+
+👉 **[Support Sovereign AI Grid on sovgrid.org/support](https://sovgrid.org/support/)**
 
 ---
 
